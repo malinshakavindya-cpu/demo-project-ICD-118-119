@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leasing Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <body background="assets/img/images (1).jpeg">
+  <h2>Leasing Calculator</h2>
+  <form id="leasingForm">
+    <label for="loan">Loan Amount (Rs.):</label>
+    <input type="number" id="loan" min="1" required />
+
+    <label for="interest">Annual Interest Rate (%):</label>
+    <input type="number" id="interest" min="0.1" required />
+
+    <label for="years">Years (≤ 5):</label>
+    <input type="number" id="years" min="1" max="5" required />
+
+    <button type="button" onclick="calculateLeasing()">Calculate</button>
+    <div id="result"></div>
+  </form>
+</body>
+</html>
