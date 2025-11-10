@@ -10,21 +10,285 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <img src="assets/img/income-tax-calculator.jpg"alt="">
-    <body background="assets/img/income-tax-calculator.jpg"alt="">
-</body>
-<font style="font-size: 56px;";> <font style="color: black;"><h2>Annual Income Tax</h2>
-  <form id="incomeForm">
-    <label for="annualIncome">Annual Income (Rs.):</label>
-    <input type="number" id="annualIncome" min="1" required />
 
-    <button type="button" onclick="calculateIncomeTax()">Calculate</button>
-    <div id="result"></div>
-  </form>
+<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+        <div class="container"> <a class="navbar-brand d-md-none" href="#"> <svg class="bi" width="24" height="24"
+                    aria-hidden="true">
+                    <use xlink:href="#aperture"></use>
+                </svg>
+                Aperture
+            </a> <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                aria-controls="offcanvas" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5> <button type="button"
+                        class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav flex-grow-1 justify-content-between">
+                        <li class="nav-item"><a class="nav-link" href="#" aria-label="Aperture"> <svg class="bi"
+                                    width="24" height="24" aria-hidden="true">
+                                    <use xlink:href="#aperture"></use>
+                                </svg> </a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="incometax.html">Income tax</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Payable Tax.html">Payable tax</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Withholdingtax.html">Withholding Tax</a></li>
+                        <li class="nav-item"><a class="nav-link" href="SSCL.html">SSCL Tax</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Leasing Calculations.html">Leasing Tax</a></li>
+                        <li class="nav-item"><a class="nav-link" href="checkout.html" aria-label="Cart"> <svg class="bi" width="24"
+                                    height="24" aria-hidden="true">
+                                    <use xlink:href="#cart"></use>
+                                </svg> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
 
 
+
+
+    <h1>
+        <font style="color: darkorange;">
+            <font style="font-size: 50px;"><p align="center">Income Tax Calculation</p>
+    </h1>
+    </font>
+    </font>
+
+    <p>
+        <font style="font-size: 34px;">Income tax in Sri Lanka is a direct tax levied on the profits and gains of individuals, businesses, and other entities, based on the Inland Revenue Act and its amendments. It applies to income earned both locally and globally, depending on residency status.    </font>
+    </p>
+
+    
+    <div class="container py-3">
+        <header>
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"> <a href="/"
+                    class="d-flex align-items-center link-body-emphasis text-decoration-none"> <svg
+                        xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94"
+                        role="img">
+                                             <span class="fs-4">Tax Types</span> </a>
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <a
+                        class="me-3 py-2 link-body-emphasis text-decoration-none" href="Withholdingtax.html">Withholding Tax</a> <a
+                        class="me-3 py-2 link-body-emphasis text-decoration-none" href="Payable Tax.html">Payable Tax</a> <a
+                        class="me-3 py-2 link-body-emphasis text-decoration-none" href="Leasing Calculations.html">Leasing Tax</a> <a
+                        class="py-2 link-body-emphasis text-decoration-none" href="Payable Tax.html">Payable Tax</a> </nav>
+           
+                    </svg>
+                </div>
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal text-body-emphasis">Income Tax charging Rates</h1>
+                <p class="fs-5 text-body-secondary"> Sri Lanka’s latest income tax law update—effective April 1, 2025—introduces revised tax slabs, increased personal relief, and new rates for specific income types under the Inland Revenue (Amendment) Act No. 02 of 2025. </p>
+            </div>
+        </header>
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal"> Rent Tax</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Sri lankan<small
+                                    class="text-body-secondary fw-light">.Rs</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li> values above </li>
+                                <li>Rs 100000</li>
+                                <li>10%</li>
+                                <li>payment available</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary"><a
+                                    href="checkout.html">Click here to pay
+                                </a></button>
+                        </div>
+                    </div>
+                </div>
+                //
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Bank Interest</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Sri lankan<small
+                                    class="text-body-secondary fw-light">.Rs</small></h1>
+                            <h1 class="card-title pricing-card-title"><small
+                                    class="text-body-secondary fw-light"></small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Bank Interest charge</li>
+                                <li>5%</li>
+
+                                <li>payment available</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="checkout.html"></a>
+                                    <font style="color: aliceblue;">Click here to pay</font>
+                                </a></button>
+                        </div>
+                    </div>
+                </div>
+                //
+<div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Bank Interest</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Sri lankan<small
+                                    class="text-body-secondary fw-light">.Rs</small></h1>
+                            <h1 class="card-title pricing-card-title"><small
+                                    class="text-body-secondary fw-light"></small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Bank Interest charge</li>
+                                <li>5%</li>
+
+                                <li>payment available</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="checkout.html"></a>
+                                    <font style="color: aliceblue;">Click here to pay</font>
+                                </a></button>
+                        </div>
+                    </div>
+                </div>
+
+                //
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Bank Interest</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Sri lankan<small
+                                    class="text-body-secondary fw-light">.Rs</small></h1>
+                            <h1 class="card-title pricing-card-title"><small
+                                    class="text-body-secondary fw-light"></small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Bank Interest charge</li>
+                                <li>5%</li>
+
+                                <li>payment available</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="checkout.html"></a>
+                                    <font style="color: aliceblue;">Click here to pay</font>
+                                </a></button>
+                        </div>
+                    </div>
+                </div>
+                //
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Bank Interest</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Sri lankan<small
+                                    class="text-body-secondary fw-light">.Rs</small></h1>
+                            <h1 class="card-title pricing-card-title"><small
+                                    class="text-body-secondary fw-light"></small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Bank Interest charge</li>
+                                <li>5%</li>
+
+                                <li>payment available</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="checkout.html"></a>
+                                    <font style="color: aliceblue;">Click here to pay</font>
+                                </a></button>
+                        </div>
+                    </div>
+                </div>
+                //
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Bank Interest</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Sri lankan<small
+                                    class="text-body-secondary fw-light">.Rs</small></h1>
+                            <h1 class="card-title pricing-card-title"><small
+                                    class="text-body-secondary fw-light"></small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Bank Interest charge</li>
+                                <li>5%</li>
+
+                                <li>payment available</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="checkout.html"></a>
+                                    <font style="color: aliceblue;">Click here to pay</font>
+                                </a></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Divident tax</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">Sri lankan<small
+                                    class="text-body-secondary fw-light">.Rs</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>values above Rs.100000</li>
+                                <li>charge</li>
+                                <li>14% </li>
+                                <li>payment available</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
+                                    href="checkout.html"><font style="color: aliceblue;">Click here to pay</font></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="d-block mb-2" role="img" viewBox="0 0 24 24">
+                    <title>Product</title>
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94">
+                    </path>
+                </svg> <small class="d-block mb-3 text-body-secondary">© All Rights reserved sri Lankan
+                    Government</small> </div>
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary text-decoration-none" href="index.html">Home</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="incomeTax.html">Income tax</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="Witdrawal tax.html">With Holding
+                            tax</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="Payable Tax.html">Payable tax</a>
+                    </li>
+                    <li><a class="link-secondary text-decoration-none" href="SSCL.html">SSCL tax</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="Leasing Calculations.html">Leasing
+                            tax</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary text-decoration-none"
+                            href="https://eservices.ird.gov.lk/Authentication/LoginEntry?ReturnUrl=%2fDashboard%2fShowDashboard">Sri
+                            lankan Income tax Department</a></li><img src="assets/img/images (3).jpeg" alt="">
+                    <li><a class="link-secondary text-decoration-none" href=""></a></li>
+
+                    <li><a class="link-secondary text-decoration-none" href="https://www.treasury.gov.lk/">
+                            Ministry
+                            of Finance, Economic Stabilization and National Policies
+                        </a></li><img src="assets/img/images (4).jpeg" alt="">
+                    <li><a class="link-secondary text-decoration-none" href="https://www.gov.lk/" National Government
+                            Portal (GOV.LK)></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+
+</body>
 </html>
