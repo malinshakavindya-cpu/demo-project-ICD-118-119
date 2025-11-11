@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Leasing Calculator</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <meta charset="UTF-8" />
+    <title>Leasing Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
-  
+
 </head>
+
 <body>
-    
-<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+
+    <body background="assets/img/119227-blue-and-white-abstract-background-image.jpg"></body>
+
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
         <div class="container"> <a class="navbar-brand d-md-none" href="#"> <svg class="bi" width="24" height="24"
                     aria-hidden="true">
                     <use xlink:href="#aperture"></use>
@@ -37,8 +41,8 @@
                         <li class="nav-item"><a class="nav-link" href="Withholdingtax.html">Withholding Tax</a></li>
                         <li class="nav-item"><a class="nav-link" href="SSCL.html">SSCL Tax</a></li>
                         <li class="nav-item"><a class="nav-link" href="Leasing Calculations.html">Leasing Tax</a></li>
-                        <li class="nav-item"><a class="nav-link" href="checkout.html" aria-label="Cart"> <svg class="bi" width="24"
-                                    height="24" aria-hidden="true">
+                        <li class="nav-item"><a class="nav-link" href="checkout.html" aria-label="Cart"> <svg class="bi"
+                                    width="24" height="24" aria-hidden="true">
                                     <use xlink:href="#cart"></use>
                                 </svg> </a></li>
                     </ul>
@@ -48,25 +52,39 @@
     </nav>
 
 
+    </p>
 
-  //
-  <h2>Leasing Calculator</h2>
-  <img src="assets/img/car-loan.jpg"alt="">
-  <form id="leasingForm">
-    
-    <label for="loan">Loan Amount (Rs.):</label>
-    <input type="number" id="loan" min="1" required />
+    <h2>
+        <font style="font-size: 50px;">
+            <font style="align-items: center;">
+                <font style="color: darkorange;">Leasing Calculator</font>
+            </font>
+        </font>
+    </h2>
+    <img src="assets/img/car-loan.jpg" alt="car" class="lease">
 
-    <label for="interest">Annual Interest Rate (%):</label>
-    <input type="number" id="interest" min="0.1" required />
+    <p>
+    <p style="font-size: 34px;">The Leasing Tax Calculator helps users estimate monthly installments based on principal,
+        interest rate, and lease duration (up to 5 years). It ensures inputs are valid, calculates total payable tax,
+        and supports reverse calculations and plan comparisons for better financial planning.</p>
 
-    <label for="years">Years (≤ 5):</label>
-    <input type="number" id="years" min="1" max="5" required />
 
-    <button type="button" onclick="calculateLeasing()">Calculate</button>
-    <div id="result"></div>
-  </form>
-  <footer class="container py-5">
+    <form id="leasingForm">
+
+        <body style="font-size: 30px;">
+            <label for="loan">Loan Amount (Rs.):</label>
+            <input type="number" id="loan" min="1" required />
+
+            <label for="interest">Annual Interest Rate (%):</label>
+            <input type="number" id="interest" min="0.1" required />
+
+            <label for="years">Years (≤ 5):</label>
+            <input type="number" id="years" min="1" max="5" required /></p>
+
+            <button type="button" onclick="calculateLeasing()">Calculate</button>
+            <div id="result"></div>
+    </form>
+    <footer class="container py-5">
         <div class="row">
             <div class="col-12 col-md"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                     stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -113,4 +131,5 @@
         </div>
     </footer>
 </body>
+
 </html>
